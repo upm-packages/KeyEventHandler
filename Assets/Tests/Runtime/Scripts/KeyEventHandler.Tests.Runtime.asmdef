@@ -1,0 +1,25 @@
+{
+    "name": "KeyEventHandler.Tests.Runtime",
+    "references": [
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "KeyEventHandler",
+        "UniRx",
+        "Zenject",
+        "Zenject-TestFramework"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll",
+        "Moq.dll",
+        "Zenject-TestFramework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": []
+}
