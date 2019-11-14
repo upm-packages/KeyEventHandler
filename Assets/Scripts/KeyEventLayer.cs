@@ -53,6 +53,11 @@ namespace KeyEventHandler
             return Commands[(keyEventType, keyCode)];
         }
 
+        private void Awake()
+        {
+            Gate.Value = enabled;
+        }
+
         private void OnEnable()
         {
             Gate.Value = true;
