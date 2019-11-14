@@ -11,7 +11,7 @@ namespace KeyEventHandler
     public class KeyEventLayer : MonoBehaviour
     {
         [InjectOptional] private IKeyInput KeyInput { get; } = StandardUnityKeyInput.Default;
-        private IReactiveProperty<bool> Gate { get; } = new BoolReactiveProperty(true);
+        private IReactiveProperty<bool> Gate { get; } = new BoolReactiveProperty(false);
 
         private IDictionary<(KeyEventType keyEventType, KeyCode keyCode), IReactiveCommand<Unit>> Commands { get; } = new Dictionary<(KeyEventType keyEventType, KeyCode keyCode), IReactiveCommand<Unit>>();
 
@@ -21,8 +21,8 @@ namespace KeyEventHandler
         {
             if (!Commands.ContainsKey((keyEventType, keyCode)))
             {
-                Commands[(keyEventType, keyCode)] = ResolveGates().
-                    CombineLatest()
+                Commands[(keyEventType, keyCode)] = ResolveGates()
+                    .CombineLatest()
                     .Select(xs => xs.All(x => x))
                     .TakeUntilDestroy(this)
                     .ToReactiveCommand();
@@ -51,6 +51,11 @@ namespace KeyEventHandler
             }
 
             return Commands[(keyEventType, keyCode)];
+        }
+
+        private void Awake()
+        {
+            Gate.Value = enabled;
         }
 
         private void OnEnable()
