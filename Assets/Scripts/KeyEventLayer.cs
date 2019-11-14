@@ -11,7 +11,7 @@ namespace KeyEventHandler
     public class KeyEventLayer : MonoBehaviour
     {
         [InjectOptional] private IKeyInput KeyInput { get; } = StandardUnityKeyInput.Default;
-        private IReactiveProperty<bool> Gate { get; } = new BoolReactiveProperty(true);
+        private IReactiveProperty<bool> Gate { get; } = new BoolReactiveProperty(false);
 
         private IDictionary<(KeyEventType keyEventType, KeyCode keyCode), IReactiveCommand<Unit>> Commands { get; } = new Dictionary<(KeyEventType keyEventType, KeyCode keyCode), IReactiveCommand<Unit>>();
 
