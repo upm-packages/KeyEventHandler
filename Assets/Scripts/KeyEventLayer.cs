@@ -21,8 +21,8 @@ namespace KeyEventHandler
         {
             if (!Commands.ContainsKey((keyEventType, keyCode)))
             {
-                Commands[(keyEventType, keyCode)] = ResolveGates().
-                    CombineLatest()
+                Commands[(keyEventType, keyCode)] = ResolveGates()
+                    .CombineLatest()
                     .Select(xs => xs.All(x => x))
                     .TakeUntilDestroy(this)
                     .ToReactiveCommand();
