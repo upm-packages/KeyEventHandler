@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.stevevermeulen.extenject": "9.1.0",
+    "com.stevevermeulen.extenject": "9.1.0-5",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.ext.nunit": "1.0.0",
     "com.unity.ide.rider": "1.1.0",
@@ -10,7 +10,6 @@
     "com.unity.textmeshpro": "2.0.1",
     "com.unity.timeline": "1.1.0",
     "com.unity.ugui": "1.0.0",
-    "dev.upm-packages.moq": "4.13.1",
     "jp.cysharp.unirx": "7.1.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
