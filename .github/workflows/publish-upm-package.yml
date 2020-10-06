@@ -13,4 +13,5 @@ jobs:
     - uses: actions/checkout@v2
     - uses: monry/actions-upm-publish@v1
       with:
+        npm_registry_url: ${{ secrets.NPM_REGISTRY_URL }}
         npm_auth_token: ${{ secrets.NPM_AUTH_TOKEN }}
