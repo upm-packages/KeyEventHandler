@@ -6,7 +6,7 @@
         "KeyEventHandler",
         "UniRx",
         "Zenject",
-        "Zenject-TestFramework"
+        "Zenject-UnitTests-Editor"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -15,11 +15,12 @@
     "precompiledReferences": [
         "nunit.framework.dll",
         "Moq.dll",
-        "Zenject-TestFramework.dll"
+        "Zenject-TestFramework-usage.dll"
     ],
     "autoReferenced": false,
     "defineConstraints": [
         "UNITY_INCLUDE_TESTS"
     ],
-    "versionDefines": []
+    "versionDefines": [],
+    "noEngineReferences": false
 }
