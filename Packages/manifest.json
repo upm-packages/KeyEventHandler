@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.stevevermeulen.extenject": "9.1.2",
+    "com.stevevermeulen.extenject": "9.1.3",
     "com.unity.collab-proxy": "1.3.9",
     "com.unity.ext.nunit": "1.0.5",
     "com.unity.ide.rider": "2.0.7",
@@ -10,7 +10,7 @@
     "com.unity.textmeshpro": "3.0.1",
     "com.unity.timeline": "1.2.6",
     "com.unity.ugui": "1.0.0",
-    "jp.cysharp.unirx": "7.1.0",
+    "com.neuecc.unirx": "git+ssh://git@github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts/",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
