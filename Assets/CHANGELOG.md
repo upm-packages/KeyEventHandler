@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0] - 2021-01-21
+
+Reference UniRx on GitHub instead of Self-hosted registry
+
+### Changes
+
+- Reference UniRx on GitHub instead of Self-hosted registry
+
 ## [1.0.0-preview.4] - 2020-10-06
 
 Fix dependencies
