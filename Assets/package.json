@@ -1,7 +1,7 @@
 {
   "name": "dev.upm-packages.keyeventhandler",
   "displayName": "Key Event Handler",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "unity": "2019.2",
   "description": "Handle layered keyboard event.",
   "author": {

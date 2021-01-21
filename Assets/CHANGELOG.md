@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.1] - 2021-01-21
+
+Fix package.json
+
+### Fixes
+
+- Remove UniRx from dependencies
+- Update version of Extenject in package.json
+
 ## [1.1.0] - 2021-01-21
 
 Reference UniRx on GitHub instead of Self-hosted registry
